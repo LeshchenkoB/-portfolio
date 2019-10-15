@@ -1,0 +1,63 @@
+.statistics
+  display: flex
+  justify-content: space-between
+  padding: 70px 25%
+  box-sizing: border-box
+  background-image: linear-gradient(to right, #211b19, #4e3427)
+
+.statistics-item
+  width: 20%
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  text-align: center
+  &:after
+    content: ""
+    display: block
+    width: 30px
+    height: 2px
+    background-color: #ffffff
+
+  i
+    display: block
+    width: 100%
+    color: #c7b299
+    margin: 0 0 30px 0
+    font-size: 44px
+
+  .statistics-number
+    display: block
+    width: 100%
+    margin: 0 0 20px 0
+    font-family: montserrat, $font-family
+    font-weight: 200
+    font-size: 48px
+    line-height: 0.75
+    color: #ffffff
+
+  .statistics-txt
+    display: block
+    width: 100%
+    margin: 0 0 30px 0
+    font-family: montserrat, $font-family
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.43
+    color: #c7b299
+    text-transform: uppercase
+
+@media (max-width: 1599.98px)
+  .statistics
+    padding: 70px 20%
+
+@media (max-width: 1199.98px)
+  .statistics
+    padding: 70px 10%
+
+@media (max-width: 991.98px)
+  .statistics
+    padding: 70px 3%
+
+@media (max-width: 767.98px)
+  .statistics
+    display: none

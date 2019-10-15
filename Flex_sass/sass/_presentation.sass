@@ -1,0 +1,94 @@
+.presentation
+  width: 100%
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+
+.presentation-video
+  width: 100%
+
+.presentation-txt-wrap
+  width: 550px
+  position: absolute
+  text-align: center
+  color: #ffffff
+
+.presentation-play
+  width: 100px
+  height: 100px
+  margin: 0 auto 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: rgba(0, 0, 0, 0.2)
+  border-radius: 50%
+  transition: background-color $transition-time
+  &:hover
+    background-color: rgba(255, 255, 255, 0.5)
+  &:hover .icon-icon-play
+    color: #000000
+  &:active
+    background-color: rgba(0, 0, 0, 0.2)
+  &:active .icon-icon-play
+    color: #ffffff
+
+  .icon-icon-play
+    font-size: 80px
+    transition: color $transition-time
+
+.presentation-title
+  font-family: raleway, $font-family
+  font-weight: 500
+  font-size: 30px
+  display: block
+  margin: 0 0 30px 0
+
+.presentation-txt
+  margin: 0 0 40px 0
+  font-family: montserrat, $font-family
+  font-weight: 300
+  font-size: 16px
+  line-height: 1.75
+
+.presentation-time
+  font-family: montserrat, $font-family
+  font-weight: 400
+  line-height: 1.71
+  font-size: 14px
+  color: #c7b299
+
+@media (max-width: 1199.98px)
+  .presentation-txt-wrap
+    width: 50%
+
+  .presentation-play
+    width: 60px
+    height: 60px
+
+    .icon-icon-play
+      font-size: 50px
+
+  .presentation-txt
+    margin: 0 0 15px 0
+
+@media (max-width: 991.98px)
+  .presentation-txt-wrap
+    width: 80%
+
+  .presentation-play
+    margin: 0 auto 10px
+
+  .presentation-title
+    margin: 0 0 10px 0
+
+@media (max-width: 767.98px)
+  .presentation-txt
+    display: none
+
+@media (max-width: 575.98px)
+  .presentation-title
+    font-size: 20px
+
+  .presentation-time
+    display: none
